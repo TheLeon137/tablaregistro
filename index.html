@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro</title>
+    <link rel="stylesheet" href="./styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <div class="page">
+    <nav class="page__menu menu">
+      <ul class="menu__list r-list">
+        <li class="menu__group"><a href="./login.html" class="menu__link r-link text-underlined">login</a></li>
+        <li class="menu__group"><a href="./index.html" class="menu__link r-link text-underlined">Registro</a></li>
+        <li class="menu__group"><a href="./tablaregistro.html" class="menu__link r-link text-underlined">Tabla</a></li>
+      </ul>
+    </nav>
+  </div>
+
+    <div class="container">
+        <div class="row">
+          <div class="col-md-6 offset-md-3">
+            <h2 >Registro</h2>
+            
+            <div class="card my-5">
+    
+              <form class="card-body cardbody-color p-lg-5">
+    
+                <div class="text-center">
+                  <img src="https://th.bing.com/th/id/R.a88a44b3e57793c88c2f620ea3becd8e?rik=fsUtzi%2f8EbNmBA&pid=ImgRaw&r=0" class="img-fluid profile-image-pic img-thumbnail rounded-circle my-3"
+                    width="200px" alt="profile">
+                </div>
+    
+                <div class="mb-3">
+                    <input type="text" placeholder="Ingrese su Nombre" class="form-control" id="Nombre">
+
+                </div>
+                <div class="mb-3">
+                    <input type="text" placeholder="Ingrese su Apellido" class="form-control" id="Apellido">
+                </div>
+                <div class="mb-3">
+                    <input type="text" placeholder="Ingrese su Direccion" class="form-control" id="Direccion">
+                </div>
+                  <div class="mb-3">
+                    <input type="text" placeholder="Ingrese su Identificación" class="form-control" id="Identificacion">
+                </div>
+                  <div class="mb-3">
+                    <input type="number" placeholder="Ingrese su Edad" class="form-control" id="Edad">
+                </div>
+                  <div class="mb-3">
+                    <select class="form-select" id="Sexo">
+                    <option value="Masculino">Masculino</option>
+                    <option value="Femenino">Femenino</option>
+                    </select>                  </div>
+                  <div class="mb-3">
+                    <input type="email" placeholder="Ingrese su Email" class="form-control" id="Email">
+                </div>
+                  <div class="mb-3">
+                    <input type="tel" placeholder="Ingrese su Teléfono" class="form-control" id="Telefono">
+                </div>
+              </form>
+              <button class="btn btn-outline-primary mt-3" onclick="registrarUsuario()">Registrar</button>
+              <button class="btn btn-outline-success mt-3" onclick="listarUsuarios()">Listar</button>
+    
+            </div>
+            
+          </div>
+        </div>
+      </div>
+
+      <footer id="sticky-footer" class="p-3 mb-2  text-white">
+        <div class="container text-center">
+          <small>Copyright &copy; Cesar De Leon</small>
+        </div>
+      </footer>
+      
+    <script src="script.js"></script>
+
+</body>
+</html>
